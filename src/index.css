@@ -18,10 +18,18 @@ a {
   color: white;
 }
 
+a:hover {
+  color: rgb(238, 130, 238);
+}
+
 .Navbar {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
+}
+
+.name {
+  color: rgb(238, 130, 238);
 }
 
 /*code {
