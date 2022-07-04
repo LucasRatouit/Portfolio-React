@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <h4>Navbar</h4>
+        <div>
+            <h4><Link to="/">Accueil</Link>
+                <Link to="/Home">Menu</Link></h4>
+        </div>
     );
 }
 
