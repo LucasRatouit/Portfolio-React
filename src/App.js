@@ -1,15 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.js";
+import Home from "./components/Home/Home.js";
+import Contact from "./components/Contact/Contact.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Contacter" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

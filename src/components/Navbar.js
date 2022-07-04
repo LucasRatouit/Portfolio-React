@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <h4>Navbar</h4>
+        <div class="Navbar">
+            <h2><Link to="/">Accueil</Link>
+                <Link to="/Contacter">Me contacter</Link></h2>
+        </div>
     );
 }
 
