@@ -19,7 +19,7 @@ function Contact() {
 
     return (
         <section>
-            <form ref={form} onSubmit={sendEmail} class="contactEmail">
+            <form ref={form} onSubmit={sendEmail} className="contactEmail">
                 <label>Nom</label>
                 <input type="text" name="user_name" />
                 <label>Email</label>
