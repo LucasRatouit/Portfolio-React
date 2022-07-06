@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  max-width: 100%;
   color: white;
   margin: 0;
   font-family: Andale Mono, AndaleMono, monospace;
@@ -7,25 +8,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-section {
+.intro {
   margin-top: 10rem;
   margin-left: 5rem;
 }
 
 a {
-  text-decoration: none;
   margin: 5rem;
   color: white;
+  text-decoration: none;
 }
 
 a:hover {
   color: rgb(238, 130, 238);
-}
-
-.Navbar {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-around;
 }
 
 .name {
@@ -38,6 +33,23 @@ label {
   margin-bottom: 1rem;
 }
 
+/* NAVBAR */
+.burger {
+  display: none;
+}
+
+.navigation-menu ul {
+  display: none;
+}
+
+.navbarPC {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* END NAVBAR */
+/* EMAIL */
 .contactEmail {
   display: flex;
   flex-flow: column;
@@ -80,6 +92,90 @@ label {
 .send:hover {
   background-color: white;
   color: rgb(238, 130, 238);
+}
+
+/* END EMAIL */
+
+@media screen and (max-width: 600px) {
+  .intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: larger;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .burger {
+    background-color: rgb(147, 112, 219);
+    padding: 0;
+    display: block;
+    position: relative;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .burger svg {
+    height: 100%;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .navigation-menu.expanded {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    white-space: nowrap;
+    background-color: rgb(147, 112, 219);
+    border-top: 1px solid black;
+  }
+
+  .navigation-menu li {
+    padding: 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .navigation-menu li a {
+    padding: 1.5rem;
+    margin: 0;
+  }
+
+  .navbarPC {
+    display: none;
+  }
+
+  .contactEmail {
+    margin: 0;
+  }
+
+  .contactEmail input.inputEmail {
+    width: auto;
+  }
+
+  .contactEmail textarea {
+    max-width: 200px;
+    height: 150px;
+    width: 100%;
+  }
 }
 
 /*code {
