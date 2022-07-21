@@ -1,4 +1,5 @@
 import React from "react";
+import GitHubCalendar from "react-github-calendar";
 
 function Resume() {
     return (
@@ -10,6 +11,18 @@ function Resume() {
                 <h1>➾ Sport</h1>
                 <h1>➾ Séries</h1>
                 <h1>➾ Jeux vidéos</h1>
+                <hr />
+                <div className="GitHubCalendar">
+                    <GitHubCalendar
+                        username="LucasRatouit"
+                        blockSize={12}
+                        blockMargin={5}
+                        blockRadius={0}
+                        color="#c084f5"
+                        fontSize={16}
+                    />
+                </div>
+
             </div>
         </section>
     );

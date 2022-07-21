@@ -48,6 +48,12 @@ label {
   justify-content: space-evenly;
 }
 
+.GitHubCalendar {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* END NAVBAR */
 /* EMAIL */
 .contactEmail {
@@ -103,6 +109,15 @@ label {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+  }
+
+  section {
+    width: 90%;
+    margin: auto;
+  }
+
+  hr {
+    width: 90%;
   }
 
   h1 {
@@ -175,6 +190,12 @@ label {
     max-width: 200px;
     height: 150px;
     width: 100%;
+  }
+
+  .GitHubCalendar {
+    margin: auto;
+    margin-top: 3rem;
+    width: 90%;
   }
 }
 
