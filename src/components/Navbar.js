@@ -15,14 +15,16 @@ function Navbar() {
                 <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
                     <ul>
                         <li><Link to="/" onClick={() => { setIsNavExpanded(!isNavExpanded) }}>Accueil</Link></li>
-                        <li><Link to="/A propos" onClick={() => { setIsNavExpanded(!isNavExpanded) }}>A propos</Link></li>
+                        <li><Link to="/Moi" onClick={() => { setIsNavExpanded(!isNavExpanded) }}>A propos</Link></li>
+                        <li><Link to="/CV" onClick={() => { setIsNavExpanded(!isNavExpanded) }}>Mon CV</Link></li>
                         <li><Link to="/Contacter" onClick={() => { setIsNavExpanded(!isNavExpanded) }}>Me contacter</Link></li>
                     </ul>
                 </div>
             </nav>
             <div class="navbarPC">
                 <h2><Link to="/">Accueil</Link></h2>
-                <h2><Link to="/Resumer">A propos</Link></h2>
+                <h2><Link to="/Moi">A propos</Link></h2>
+                <h2><Link to="/CV">Mon CV</Link></h2>
                 <h2><Link to="/Contacter">Me contacter</Link></h2>
             </div>
 
