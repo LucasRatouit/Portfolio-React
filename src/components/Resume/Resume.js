@@ -12,6 +12,7 @@ function Resume() {
                 <h1>➾ Séries</h1>
                 <h1>➾ Jeux vidéos</h1>
                 <hr />
+                <h1 className="titleCalendar">Calendrier GitHub</h1>
                 <div className="GitHubCalendar">
                     <GitHubCalendar
                         username="LucasRatouit"
